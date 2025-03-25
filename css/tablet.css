@@ -1,0 +1,119 @@
+@media (min-width: 767px) and (max-width: 1024px) {
+    /* Bỏ phần tên giữa navbar */
+    .navbar-infor {
+       display: none;
+    }
+
+    /* Thông tin cá nhân */
+    /* Thu hẹp khoảng cách giữa các cột với nhau cũng như với lề */
+    .goal, .information {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .hide {
+         display: none;
+    }
+
+    /* Lý lịch */
+    
+    .profile-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Chia thành 2 cột thay vì 3 cột như ở màn hình Laptop */
+        grid-template-rows: auto auto; 
+        gap: 10px; 
+        place-self: center;
+    }
+    .profile-box > div {
+        width: 250px;
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .profile-box > div > ul > li {
+        margin-bottom: 20px;
+    }
+    .profile-box > div > ul > li:last-child {
+        margin-bottom: 0;
+    }
+    .content.hobby.hide {
+        display: none;
+    }
+    .content.skill {
+        margin-bottom: 0;
+    }
+    .view-btn {
+        display: block;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }    
+
+    /* Chứng chỉ */
+    section#certificate {
+        padding-bottom: 0;
+    }
+    .certificate-box h3 {
+        margin-bottom: 0;
+    }
+    .certificate-box.infor {
+        flex-direction: column; /* Hiển thị theo chiều dọc */
+    }
+    .certificate-box div {
+        row-gap: 0;
+    }
+    .certificate-box.infor div {
+        margin: 0;
+    }
+    #left.certificate-box.infor, #right.certificate-box.infor {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding-right: 10px;
+    }
+    .certificate-box.infor h5:first-child {
+        padding-top: 0;
+    }
+    .certificate-box.border {
+        background-color: #d6c08d;
+    }
+
+    /* Dự án */
+    section#project {
+        width: 100%;
+    }
+    .project-info {
+        border: 1px solid #e5e4e5;
+    }
+    .project-box {
+        place-self: center;
+    }
+    .project-box img {
+        height: 150px;
+    }
+    .project-box > div {
+        grid-template-columns: repeat(3, 175px); /* Thu hẹp chiều rộng của cột dự án */
+    }
+    .project-info div {
+        border-bottom: 0;
+    }
+    .project-info h4 {
+        line-height: 1.5;
+    }
+    .project-info > div:nth-child(3) {
+        display: grid;
+        grid-template-columns: 0fr 25px 0fr;
+        border-top: 1px solid #e5e4e5;
+    }
+    .project-info > div:nth-child(3) i.icon-lamp {
+        grid-column: 2 / 2;
+    }
+    
+    /* footer */
+    footer {
+        width: 100%;          
+    }
+
+}
+
